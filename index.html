@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Camilo's Portfolio</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Bootstrap 5 Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container__header">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/CAMILO.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Home section-->
+        <!--Portada Inicio-->
+        <div class="container__cover div__offset" id="home">
+            <div id="particles-js"></div>
+            <div class="cover">
+                <section class="text__cover">
+                    <h1>Camilo's Portfolio Full-Stack Developer With MERN</h1>
+                    <p>Design - Build - Test - Repeat </p>
+                    <a href="#contact" class="button__cover">Contact</a>
+                </section>
+                <section class="video__cover">
+                    <iframe width="560" height="400" src="https://youtube.com/embed/570rvpBzfNM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </section>
+            </div>
+        </div>
+        <!--About Section-->
+        <!--Bootstrap Card-->
+        <section class="about" id="about"></section>
+        <div class="card mb-3" style="max-width: 1160px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/IMG_1542.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title-about">Camilo Hernandez</h1>
+                        <p class="card-text">I am a 45-year-old Colombian man with a degree in Modern Languages from the
+                            Pontificia Universidad Javeriana at Bogota, Colombia. I have worked for almost 2 decades as
+                            a translator for different companies and also as a freelancer and now I have decided to
+                            change
+                            my career path and pursue my dream of becoming a web developer.</p>
+                        <p>If you want to contact me through my email or follow my progress as a web developer on Github
+                            or LinkedIn, please feel free to click on any of these links.</p>
+                        <div class="card-body" style="display:flex; justify-content:space-between;">
+                            <a href="mailto:maqrol1977@gmail.com" class="button__card">Gmail</a>
+                            <a href="https://github.com/maqrol77?tab=repositories" class="button__card">GitHub</a>
+                            <a href="https://www.linkedin.com/in/kmo-hernandez-749044254/"
+                                class="button__card">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects section-->
+        <div class="container__project container__card-primary" id="projects">
+            <div class="project card__primary">
+
+                <div class="container__project container__box-cardprimary"></div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/PacMen.PNG" class="card-img-top pacmen-image" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">PacMen Exercise</h3>
+                                <p class="card-text">You can add as many PacMen as you want on a page as they move
+                                    randomly across the page.</p>
+                            </div>
+                            <a href="https://github.com/maqrol77/PacMan-Exercise" class="button__card">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/Eyes.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Eyes Exercise</h3>
+                                <p class="card-text">In this project, someone follows you with his eyes
+                                    according to the cursor movement on the screen.</p>
+                            </div>
+                            <a href="https://github.com/maqrol77/Eyes-Exercise" class="button__card">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/Map.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Bus Tracker Exercise</h3>
+                                <p class="card-text">In this exercise, it was used a Mapboxgl library to add markers to
+                                    the map indicating which are the bus stops between Harvard University and MIT.</p>
+                            </div>
+                            <a href="https://github.com/maqrol77/Bus-Tracker" class="button__card">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <section class="contact" id="contact"></section>
+        <div class="container__contact">
+            <div class="row" id="my-row">
+                <div class="col-md-7">
+                    <h4>Get in touch</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send</button>
+                    <div class="social__media">
+                        <a href="https://github.com/maqrol77">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kmo-hernandez-749044254/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCWjOTBoKXWVJCOXkqC5eBKg">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/CamiloH05776855">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h4>Contact us</h4>
+                    <hr>
+                    <div class="mt-5">
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p> Adress: 225 Crescent Avenue, Apartment 2L, Revere MA, 02151</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>Contact:- 1 617 987-7174</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>Email:- maqrol1977@gmail.com</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <i class="bi bi-browser-chrome"></i>
+                            <p>Website: www.contact.com</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="my__row">
+            <div class="logo__footer">
+                <a href="#">
+                    <img src="assets/CAMILO.png" alt="">
+                </a>
+                <div class="col text-center">
+                    <p>CamiloHernandez © 2023</p>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="main.js"></script>
+
+<!--JavaScript Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
